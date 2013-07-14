@@ -31,7 +31,8 @@ Func ExecuteLogin()
 
 			Else
 
-				MsgBox(64, "Existing...", "What's wrong with you?"&@CRLF&"You did not start Firefox as I was telling you. So it's your bad to close this lovely tool and do it right next time!")
+				MsgBox(64, "Existing...", "There went something wrong but at this point I only can shoot a guess:"&@CRLF&@CRLF&"* You did not start Firefox"&@CRLF&"*There are no login credentials (debug tag)")
+				Exit
 
 			EndIf
 EndFunc

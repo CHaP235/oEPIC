@@ -18,6 +18,7 @@ Opt("GUIOnEventMode", 1)
 ; Emercency thing - Not working if in admin mode (BlockInput)
 HotKeySet("{ESC}", "GoExit")
 Func GoExit()
+	MsgBox(0,"","Don't Panic!")
 	Exit
 EndFunc
 

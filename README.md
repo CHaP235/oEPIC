@@ -4,7 +4,7 @@
 ####################################################
 ## Build x86 - 0.04
 ####################################################
-07:12 PM 7/13/2013
+10:06 PM 7/14/2013
 
 ----- Notes
 
@@ -29,6 +29,7 @@ FIX: (critical) Firefox position is not re-checked before a plan is executed
 
 ----- Upcoming
 
+* (medium / in dev) Tooltips
 * Misc tab
   - (low / planned) Auto check mails 'All Mails Readed'
 * Build tab

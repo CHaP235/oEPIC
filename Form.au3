@@ -6,7 +6,7 @@ $lTransferNotifyLine = GUICtrlCreateLabel("NULL", 20, 320, 250, 20)
 GUICtrlSetColor(-1, 0xFF0000)
 $lAttackNotifyLine = GUICtrlCreateLabel("NULL", 200, 320, 250, 20)
 GUICtrlSetColor(-1, 0xFF0000)
-GUICtrlCreateLabel("build x86 0.03", 450, 5, 100, 20)
+GUICtrlCreateLabel("build x86 0.04", 450, 5, 100, 20)
 $guiTabs = GUICtrlCreateTab(10,10,500,300)
 
 #region DEBUG
@@ -22,8 +22,8 @@ $iLoginPass = GUICtrlCreateInput("NULL", 30, 180, 120, 20, BitOR($GUI_SS_DEFAULT
 $iLoginUni = GUICtrlCreateCombo("uni80", 30, 210, 120, 20, BitOR($CBS_DROPDOWN, $CBS_DROPDOWNLIST))
 GUICtrlSetData(-1, "uni81|uni82")
 GUICtrlCreateLabel("Mouse Delay (Click / Input)", 200, 130, 150, 20)
-$iDebugDelayClick = GUICtrlCreateInput("NULL", 200, 150, 80, 20, BitOR($GUI_SS_DEFAULT_INPUT, $ES_CENTER, $ES_NUMBER))
-$iDebugDelayInput = GUICtrlCreateInput("NULL", 290, 150, 80, 20, BitOR($GUI_SS_DEFAULT_INPUT, $ES_CENTER, $ES_NUMBER))
+$iDebugDelayClick = GUICtrlCreateInput("1200", 200, 150, 80, 20, BitOR($GUI_SS_DEFAULT_INPUT, $ES_CENTER, $ES_NUMBER))
+$iDebugDelayInput = GUICtrlCreateInput("100", 290, 150, 80, 20, BitOR($GUI_SS_DEFAULT_INPUT, $ES_CENTER, $ES_NUMBER))
 $btnDebugSaveAll = GUICtrlCreateButton("Save All", 320, 250, 60, 20)
 GUISetState()
 #endregion
