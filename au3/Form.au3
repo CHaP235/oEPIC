@@ -6,7 +6,7 @@ $lTransferNotifyLine = GUICtrlCreateLabel("NULL", 20, 320, 250, 20)
 GUICtrlSetColor(-1, 0xFF0000)
 $lAttackNotifyLine = GUICtrlCreateLabel("NULL", 200, 320, 250, 20)
 GUICtrlSetColor(-1, 0xFF0000)
-GUICtrlCreateLabel("build x86 0.04", 450, 5, 100, 20)
+GUICtrlCreateLabel("build x86 0.05", 450, 5, 100, 20)
 $guiTabs = GUICtrlCreateTab(10,10,500,300)
 
 #region DEBUG

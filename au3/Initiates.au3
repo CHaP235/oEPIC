@@ -1,7 +1,7 @@
 #region LOAD RELEASE NOTE
 Func LoadReleaseNotes()
 	; Declares
-	Local $FileHandle = FileOpen("../README.md", 0)
+	Local $FileHandle = FileOpen("README.md", 0)
 	Local $m_Temp
 	; File not there?
 	if $FileHandle <> -1 Then
