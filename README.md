@@ -1,6 +1,52 @@
 @@ oEPIC - Be A Smart Player @@
 
 ####################################################
+## Build x86 - 0.06
+***
+####################################################
+09:44 PM 7/26/2013
+
+#### Notes
+
+Remember! This is an experimental build. Check and set ALWAYS the 'Exclude Engage Click' at the debug tab in any case of uncertainty
+
+-Khris
+
+#### Change Log  
+
+* MOD: Up to 20 Enemy Planets savable
+* MOD: 20 Attack plans can be saved and executed
+
+#### Known Bugs  
+
+* (critical) All saved enemy planets and attack plans files are not combatible with this build
+	[WORKAROUND]
+	Delete in your user directory inside the folder oEPIC both files: 'EP.ini' and 'AttackPlans.ini' or
+	open these files and copy past one section until there are 20 sections
+* (critical) I'm not quite sure but I'm guessing it could cause some trouble to activate a plan with 'NULL'-values  
+* (non-critical) Attack plan refresh buttons  
+  + In some cases the settings are not correct  
+* (non-critical) No refreshing for planet preview names after start up  
+  + Transfer tab  
+  + Attack tab  
+* (non-critical) Debug browser offset values are working but in fact these are currently more useless than useful* Debug browser offset values are working but in fact these are currently more useless than usefull  
+
+#### Upcoming  
+
+* (medium / in dev) Tooltips  
+* (low / in dev) Sound feedback
+  + If an attack is imminent
+* Misc tab  
+  + (low / planned) Auto check mails 'All Mails Readed'  
+* Build tab  
+  + (low / planned) Basic setup plans to build buildings  
+* (medium / in dev) Debug check for login  
+* Code optimization and shrinking (Cpt. Obvious waves here)  
+  + (low / planned) Especially for transfer and attack sections  
+* Attack tab  
+  + (low / in dev) Support for more ships  
+
+####################################################
 ## Build x86 - 0.05
 ***
 ####################################################

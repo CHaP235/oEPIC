@@ -20,13 +20,13 @@ EndFunc
 
 #region LOAD PLANETS
 Func LoadPlayerPlanets()
-LoadPPFPEPPlanets($aPP, "PP.ini")
+	LoadPPFPEPPlanets($aPP, "PP.ini")
 EndFunc
 Func LoadFriendPlanets()
-LoadPPFPEPPlanets($aFP, "FP.ini")
+	LoadPPFPEPPlanets($aFP, "FP.ini")
 EndFunc
 Func LoadEnemyPlanets()
-LoadPPFPEPPlanets($aEP, "EP.ini")
+	EPLoad($aEP, "EP.ini")
 EndFunc
 
 #endregion
@@ -38,6 +38,27 @@ Func LoadPPFPEPPlanets($Array, $File)
 	If @error = 1 Then Return
 
 		For $iCount = 0 To 5 Step 1
+
+			GUICtrlSetData($Array[((4 * $iCount) + 0)],$Temp[((4 * $iCount) + 1)][0])
+			GUICtrlSetData($Array[((4 * $iCount) + 0)],$Temp[((4 * $iCount) + 1)][1])
+			GUICtrlSetData($Array[((4 * $iCount) + 1)],$Temp[((4 * $iCount) + 2)][0])
+			GUICtrlSetData($Array[((4 * $iCount) + 1)],$Temp[((4 * $iCount) + 2)][1])
+			GUICtrlSetData($Array[((4 * $iCount) + 2)],$Temp[((4 * $iCount) + 3)][0])
+			GUICtrlSetData($Array[((4 * $iCount) + 2)],$Temp[((4 * $iCount) + 3)][1])
+			GUICtrlSetData($Array[((4 * $iCount) + 3)],$Temp[((4 * $iCount) + 4)][0])
+			GUICtrlSetData($Array[((4 * $iCount) + 3)],$Temp[((4 * $iCount) + 4)][1])
+
+		Next
+
+EndFunc
+
+Func EPLoad($Array, $File)
+
+	Local $Temp = IniReadSection($USERPATH & $File, "Planets")
+
+	If @error = 1 Then Return
+
+		For $iCount = 0 To 19 Step 1
 
 			GUICtrlSetData($Array[((4 * $iCount) + 0)],$Temp[((4 * $iCount) + 1)][0])
 			GUICtrlSetData($Array[((4 * $iCount) + 0)],$Temp[((4 * $iCount) + 1)][1])

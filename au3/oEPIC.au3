@@ -15,7 +15,7 @@
 
 ; Activate event mode for form
 Opt("GUIOnEventMode", 1)
-; Emercency thing - Not working if in admin mode (BlockInput)
+; Emercency thing - Not working if in admin mode (BlockInput) and @WinXP/2k/Server
 HotKeySet("{ESC}", "GoExit")
 Func GoExit()
 	MsgBox(0,"","Don't Panic!")

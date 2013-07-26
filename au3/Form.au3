@@ -1,13 +1,13 @@
 
 ; Main
-$fMain = GUICreate("oEPIC - Be A Smart Player", 540, 340, 1000, 0)
+$fMain = GUICreate("oEPIC - Be A Smart Player", 540, 640, 1000, 0)
 $lTime = GUICtrlCreateLabel("NULL", 350, 5, 100, 20)
 $lTransferNotifyLine = GUICtrlCreateLabel("NULL", 20, 320, 250, 20)
 GUICtrlSetColor(-1, 0xFF0000)
 $lAttackNotifyLine = GUICtrlCreateLabel("NULL", 200, 320, 250, 20)
 GUICtrlSetColor(-1, 0xFF0000)
 GUICtrlCreateLabel("build x86 0.05", 450, 5, 100, 20)
-$guiTabs = GUICtrlCreateTab(10,10,500,300)
+$guiTabs = GUICtrlCreateTab(10,10,500,600)
 
 #region DEBUG
 $tiDebug = GUICtrlCreateTabItem("Debug")
@@ -69,14 +69,14 @@ GUISetState()
 #endregion
 
 #region ENEMY
-Global $aEP[(4 * 6)]
-Global $aEPBtnClear[6]
+Global $aEP[(4 * 20)]
+Global $aEPBtnClear[20]
 
 $tiEnemy = GUICtrlCreateTabItem("Enemies")
-$EPSave = GUICtrlCreateButton("Save", 100, 250, 40, 20)
-$EPLoad = GUICtrlCreateButton("Load", 150, 250, 40, 20)
-; -1 becauze this crapy - erm - lovely for loop counts to exact the TO-VALUE
-For $iCount = 0 To 5 Step 1
+$EPSave = GUICtrlCreateButton("Save", 370, 50, 40, 20)
+$EPLoad = GUICtrlCreateButton("Load", 420, 50, 40, 20)
+; -1 becauze this crapy - erm - lovely 'for loop' counts to exact the TO-VALUE
+For $iCount = 0 To 19 Step 1
 	GUICtrlCreateLabel("["& ($iCount + 1) &"]", 20, (40 + ($iCount * 20)), 20, 20)
 	$aEP[((4 * $iCount) + 0)] = GUICtrlCreateInput("NULL"& ($iCount + 1), 50, (40 + ($iCount * 20)), 120, 20)
 	; Coords
@@ -162,11 +162,11 @@ GUICtrlCreateLabel("Loop Delay", 370, 40)
 $lSelectedAttackPlan = GUICtrlCreateLabel("1", 480, 40,20,30)
 GUICtrlSetColor(-1, 0xFF0000)
 GUICtrlSetFont(-1, 20)
-$btnAttackRefreshAll = GUICtrlCreateButton("Refresh Plans", 60, 250, 80, 20)
+$btnAttackRefreshAll = GUICtrlCreateButton("Refresh Plans", 370, 80, 80, 20)
 
-Local $btnAttackSelectPlan[6], $lAttackStatus[6], $lAttackDelay[6], $lAttackFromName[6], $lAttackToName[6]
+Local $btnAttackSelectPlan[21], $lAttackStatus[21], $lAttackDelay[21], $lAttackFromName[21], $lAttackToName[21]
 
-For $iCount = 0 To 5 Step 1
+For $iCount = 0 To 19 Step 1
 	GUICtrlCreateLabel(($iCount + 1), 20, (120 + ($iCount * 20)), 20, 20)
 	$lAttackFromName[$iCount] = GUICtrlCreateLabel("[refresh missing]", 50, (120 + ($iCount * 20)), 80, 20)
 	$lAttackToName[$iCount] = GUICtrlCreateLabel("[refresh missing]", 140, (120 + ($iCount * 20)), 80, 20)
@@ -197,7 +197,7 @@ GUICtrlSetLimit(-1, 2)
 $cbAttackToKind = GUICtrlCreateCombo("E", 200, 60, 40, 20, BitOR($CBS_DROPDOWN, $CBS_AUTOHSCROLL, $CBS_DROPDOWNLIST))
 ; GUICtrlSetData(-1,"F")
 $cbAttackTo = GUICtrlCreateCombo("1", 250, 60, 40, 20, BitOR($CBS_DROPDOWN, $CBS_AUTOHSCROLL, $CBS_DROPDOWNLIST))
-GUICtrlSetData(-1,"2|3|4|5|6")
+GUICtrlSetData(-1,"2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20")
 GUISetState()
 #endregion
 

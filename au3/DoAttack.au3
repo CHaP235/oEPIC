@@ -1,8 +1,8 @@
 
 
 
-Local $_AttackOngoing[6] = [0,0,0,0,0,0]
-Local $_AttackDelay[6] = [0,0,0,0,0,0]
+Local $_AttackOngoing[20] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Local $_AttackDelay[20] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 Func StopAttack($Plan)
 	$_AttackOngoing[$Plan] = 0
@@ -47,7 +47,7 @@ EndFunc
 
 Func CheckAttack()
 
-For $Plan = 0 To 5 Step 1
+For $Plan = 0 To 19 Step 1
 
 ; Greater than o? The Attack is activated and ready for check
 	if $_AttackOngoing[$Plan] > 0 Then
@@ -77,7 +77,7 @@ Next
 EndFunc
 
 Func StartAttack($DBG_ExcludeEngage)
-	BlockInput(1)
+	; BlockInput(1)
 	If WinActivate("[CLASS:MozillaWindowClass]") Then
 
 		WinMove("[CLASS:MozillaWindowClass]", "", GetOffsetX(0), GetOffsetY(0), 1000, @DesktopHeight, 2)
@@ -90,6 +90,9 @@ Func StartAttack($DBG_ExcludeEngage)
 EndFunc
 
 Func DoAttackSequence($DBG_ExcludeEngage)
+
+
+	ExecuteLogin()
 
 	$ClickDelay = GUICtrlRead($iDebugDelayClick)
 	$InputDelay = GUICtrlRead($iDebugDelayInput)

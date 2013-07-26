@@ -110,18 +110,33 @@ EndFunc
 
 #endregion
 
-;~ #region ATTACK TAB
+#region ATTACK TAB
 
 ; Declares
 Global $aActiveAttackPlan = 0;
 
 ; Events
+; I wish I could pass some parameters...
 GUICtrlSetOnEvent($btnAttackSelectPlan[0], "eSelectAttack0")
 GUICtrlSetOnEvent($btnAttackSelectPlan[1], "eSelectAttack1")
 GUICtrlSetOnEvent($btnAttackSelectPlan[2], "eSelectAttack2")
 GUICtrlSetOnEvent($btnAttackSelectPlan[3], "eSelectAttack3")
 GUICtrlSetOnEvent($btnAttackSelectPlan[4], "eSelectAttack4")
 GUICtrlSetOnEvent($btnAttackSelectPlan[5], "eSelectAttack5")
+GUICtrlSetOnEvent($btnAttackSelectPlan[6], "eSelectAttack6")
+GUICtrlSetOnEvent($btnAttackSelectPlan[7], "eSelectAttack7")
+GUICtrlSetOnEvent($btnAttackSelectPlan[8], "eSelectAttack8")
+GUICtrlSetOnEvent($btnAttackSelectPlan[9], "eSelectAttack9")
+GUICtrlSetOnEvent($btnAttackSelectPlan[10], "eSelectAttack10")
+GUICtrlSetOnEvent($btnAttackSelectPlan[11], "eSelectAttack11")
+GUICtrlSetOnEvent($btnAttackSelectPlan[12], "eSelectAttack12")
+GUICtrlSetOnEvent($btnAttackSelectPlan[13], "eSelectAttack13")
+GUICtrlSetOnEvent($btnAttackSelectPlan[14], "eSelectAttack14")
+GUICtrlSetOnEvent($btnAttackSelectPlan[15], "eSelectAttack15")
+GUICtrlSetOnEvent($btnAttackSelectPlan[16], "eSelectAttack16")
+GUICtrlSetOnEvent($btnAttackSelectPlan[17], "eSelectAttack17")
+GUICtrlSetOnEvent($btnAttackSelectPlan[18], "eSelectAttack18")
+GUICtrlSetOnEvent($btnAttackSelectPlan[19], "eSelectAttack19")
 GUICtrlSetOnEvent($btnAttackGo, "eGoAttackPlan")
 GUICtrlSetOnEvent($btnAttackHold, "eHoldAttackPlan")
 GUICtrlSetOnEvent($cbAttackFrom,"GetAttackFromPreviewName")
@@ -142,36 +157,140 @@ Func eSelectAttack0()
 	RefreshAttackLabels($aActiveTransferPlan)
 	$aActiveAttackPlan = 0;
 	LoadAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
 EndFunc
 Func eSelectAttack1()
 	SaveAttackPlan($aActiveAttackPlan)
 	RefreshAttackLabels($aActiveAttackPlan)
 	$aActiveAttackPlan = 1;
 	LoadAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
 EndFunc
 Func eSelectAttack2()
 	SaveAttackPlan($aActiveAttackPlan)
 	RefreshAttackLabels($aActiveAttackPlan)
 	$aActiveAttackPlan = 2;
 	LoadAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
 EndFunc
 Func eSelectAttack3()
 	SaveAttackPlan($aActiveAttackPlan)
 	RefreshAttackLabels($aActiveAttackPlan)
 	$aActiveAttackPlan = 3;
 	LoadAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
 EndFunc
 Func eSelectAttack4()
 	SaveAttackPlan($aActiveAttackPlan)
 	RefreshAttackLabels($aActiveAttackPlan)
 	$aActiveAttackPlan = 4;
 	LoadAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
 EndFunc
 Func eSelectAttack5()
 	SaveAttackPlan($aActiveAttackPlan)
 	RefreshAttackLabels($aActiveAttackPlan)
 	$aActiveAttackPlan = 5;
 	LoadAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+EndFunc
+Func eSelectAttack6()
+	SaveAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+	$aActiveAttackPlan = 6;
+	LoadAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+EndFunc
+Func eSelectAttack7()
+	SaveAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+	$aActiveAttackPlan = 7;
+	LoadAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+EndFunc
+Func eSelectAttack8()
+	SaveAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+	$aActiveAttackPlan = 8;
+	LoadAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+EndFunc
+Func eSelectAttack9()
+	SaveAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+	$aActiveAttackPlan = 9;
+	LoadAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+EndFunc
+Func eSelectAttack10()
+	SaveAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+	$aActiveAttackPlan = 10;
+	LoadAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+EndFunc
+Func eSelectAttack11()
+	SaveAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+	$aActiveAttackPlan = 11;
+	LoadAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+EndFunc
+Func eSelectAttack12()
+	SaveAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+	$aActiveAttackPlan = 12;
+	LoadAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+EndFunc
+Func eSelectAttack13()
+	SaveAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+	$aActiveAttackPlan = 13;
+	LoadAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+EndFunc
+Func eSelectAttack14()
+	SaveAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+	$aActiveAttackPlan = 14;
+	LoadAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+EndFunc
+Func eSelectAttack15()
+	SaveAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+	$aActiveAttackPlan = 15;
+	LoadAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+EndFunc
+Func eSelectAttack16()
+	SaveAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+	$aActiveAttackPlan = 16;
+	LoadAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+EndFunc
+Func eSelectAttack17()
+	SaveAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+	$aActiveAttackPlan = 17;
+	LoadAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+EndFunc
+Func eSelectAttack18()
+	SaveAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+	$aActiveAttackPlan = 18;
+	LoadAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+EndFunc
+Func eSelectAttack19()
+	SaveAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
+	$aActiveAttackPlan = 19;
+	LoadAttackPlan($aActiveAttackPlan)
+	RefreshAttackLabels($aActiveAttackPlan)
 EndFunc
 Func eGoAttackPlan()
 	SaveAttackPlan($aActiveAttackPlan)
@@ -216,6 +335,20 @@ GUICtrlSetOnEvent($aEPBtnClear[2], "eClearEPField2")
 GUICtrlSetOnEvent($aEPBtnClear[3], "eClearEPField3")
 GUICtrlSetOnEvent($aEPBtnClear[4], "eClearEPField4")
 GUICtrlSetOnEvent($aEPBtnClear[5], "eClearEPField5")
+GUICtrlSetOnEvent($aEPBtnClear[6], "eClearEPField6")
+GUICtrlSetOnEvent($aEPBtnClear[7], "eClearEPField7")
+GUICtrlSetOnEvent($aEPBtnClear[8], "eClearEPField8")
+GUICtrlSetOnEvent($aEPBtnClear[9], "eClearEPField9")
+GUICtrlSetOnEvent($aEPBtnClear[10], "eClearEPField10")
+GUICtrlSetOnEvent($aEPBtnClear[11], "eClearEPField11")
+GUICtrlSetOnEvent($aEPBtnClear[12], "eClearEPField12")
+GUICtrlSetOnEvent($aEPBtnClear[13], "eClearEPField13")
+GUICtrlSetOnEvent($aEPBtnClear[14], "eClearEPField14")
+GUICtrlSetOnEvent($aEPBtnClear[15], "eClearEPField15")
+GUICtrlSetOnEvent($aEPBtnClear[16], "eClearEPField16")
+GUICtrlSetOnEvent($aEPBtnClear[17], "eClearEPField17")
+GUICtrlSetOnEvent($aEPBtnClear[18], "eClearEPField18")
+GUICtrlSetOnEvent($aEPBtnClear[19], "eClearEPField19")
 GUICtrlSetOnEvent($EPSave, "eEPSave")
 GUICtrlSetOnEvent($EPLoad, "LoadEnemyPlanets")
 #endregion
@@ -284,6 +417,48 @@ EndFunc
 Func eClearEPField5()
 	PPFPEPClearFileds($aEP, 5)
 EndFunc
+Func eClearEPField6()
+	PPFPEPClearFileds($aEP, 6)
+EndFunc
+Func eClearEPField7()
+	PPFPEPClearFileds($aEP, 7)
+EndFunc
+Func eClearEPField8()
+	PPFPEPClearFileds($aEP, 8)
+EndFunc
+Func eClearEPField9()
+	PPFPEPClearFileds($aEP, 9)
+EndFunc
+Func eClearEPField10()
+	PPFPEPClearFileds($aEP, 10)
+EndFunc
+Func eClearEPField11()
+	PPFPEPClearFileds($aEP, 11)
+EndFunc
+Func eClearEPField12()
+	PPFPEPClearFileds($aEP, 12)
+EndFunc
+Func eClearEPField13()
+	PPFPEPClearFileds($aEP, 13)
+EndFunc
+Func eClearEPField14()
+	PPFPEPClearFileds($aEP, 14)
+EndFunc
+Func eClearEPField15()
+	PPFPEPClearFileds($aEP, 15)
+EndFunc
+Func eClearEPField16()
+	PPFPEPClearFileds($aEP, 16)
+EndFunc
+Func eClearEPField17()
+	PPFPEPClearFileds($aEP, 17)
+EndFunc
+Func eClearEPField18()
+	PPFPEPClearFileds($aEP, 18)
+EndFunc
+Func eClearEPField19()
+	PPFPEPClearFileds($aEP, 19)
+EndFunc
 #endregion
 
 GUICtrlSetOnEvent($btnTranferRefreshAll, "RefreshTransferPlans")
@@ -297,7 +472,7 @@ EndFunc
 
 GUICtrlSetOnEvent($btnAttackRefreshAll, "RefreshAttackPlans")
 Func RefreshAttackPlans()
-	For $iCount = 0 To 5 Step 1
+	For $iCount = 0 To 20 Step 1
 		LoadAttackPlan($iCount)
 		RefreshAttackLabels($iCount)
 		$aActiveAttackPlan = $iCount
@@ -312,20 +487,35 @@ FUNC PPFPEPClearFileds($Array, $Pos)
 EndFunc
 
 Func ePPSave()
-	PPFPEPSave($aPP,"PP.ini")
+	PPFPEPSave($aPP, "PP.ini")
 EndFunc
 
 Func eFPSave()
-	PPFPEPSave($aFP,"FP.ini")
+	PPFPEPSave($aFP, "FP.ini")
 EndFunc
 
 Func eEPSave()
-	PPFPEPSave($aEP,"EP.ini")
+	EPSave($aEP, "EP.ini")
 EndFunc
 
 Func PPFPEPSave($Array, $File)
 	Local $Temp[(4 * 6)][2]
 	For $iCount = 0 To 5 Step 1
+		$Temp[((4 * $iCount) + 0)][0] &= "Name"
+		$Temp[((4 * $iCount) + 0)][1] &= GUICtrlRead($Array[((4 * $iCount) + 0)])
+		$Temp[((4 * $iCount) + 1)][0] &= "X"
+		$Temp[((4 * $iCount) + 1)][1] &= GUICtrlRead($Array[((4 * $iCount) + 1)])
+		$Temp[((4 * $iCount) + 2)][0] &= "Y"
+		$Temp[((4 * $iCount) + 2)][1] &= GUICtrlRead($Array[((4 * $iCount) + 2)])
+		$Temp[((4 * $iCount) + 3)][0] &= "Z"
+		$Temp[((4 * $iCount) + 3)][1] &= GUICtrlRead($Array[((4 * $iCount) + 3)])
+	Next
+	IniWriteSection($USERPATH & $File, "Planets", $Temp, 0)
+EndFunc
+
+Func EPSave($Array, $File)
+	Local $Temp[(4 * 20)][2]
+	For $iCount = 0 To 19 Step 1
 		$Temp[((4 * $iCount) + 0)][0] &= "Name"
 		$Temp[((4 * $iCount) + 0)][1] &= GUICtrlRead($Array[((4 * $iCount) + 0)])
 		$Temp[((4 * $iCount) + 1)][0] &= "X"

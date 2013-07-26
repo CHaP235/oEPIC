@@ -78,7 +78,7 @@ Next
 EndFunc
 
 Func StartTransfer($DBG_ExcludeEngage)
-	BlockInput(1)
+	; BlockInput(1)
 	If WinActivate("[CLASS:MozillaWindowClass]") Then
 
 		WinMove("[CLASS:MozillaWindowClass]", "", GetOffsetX(0), GetOffsetY(0), 1000, @DesktopHeight, 2)
